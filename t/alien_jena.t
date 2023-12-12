@@ -6,8 +6,8 @@ use Alien::Jena;
 alien_diag 'Alien::Jena';
 alien_ok 'Alien::Jena';
 
-# run_ok([ ... ])
-#   ->success
-#   ->out_like(qr/ ... /);
+run_ok([ 'jena' ])
+  ->success
+  ->out_like(qr/Jena version\s+:\s+([0-9\.]+)/);
 
 done_testing;

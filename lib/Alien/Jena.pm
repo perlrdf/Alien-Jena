@@ -9,7 +9,7 @@ use 5.008004;
 
 =head1 NAME
 
-Alien::Jena - Find or build Jena
+Alien::Jena - Find or build Jena semantic web library
 
 =head1 SYNOPSIS
 
@@ -32,6 +32,10 @@ for the use of other modules.
 =head1 SEE ALSO
 
 =over 4
+
+=item L<https://jena.apache.org/>
+
+Jena homepage
 
 =item L<Alien>
 
