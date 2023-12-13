@@ -6,7 +6,8 @@ use Alien::Jena;
 alien_diag 'Alien::Jena';
 alien_ok 'Alien::Jena';
 
-run_ok([ 'jena' ])
+my $jena = $^O ne 'MSWin32' ? 'jena' : 'jena.bat';
+run_ok([ $jena ])
   ->success
   ->out_like(qr/Jena version\s+:\s+([0-9\.]+)/);
 
